@@ -1,0 +1,21 @@
+{
+  "Test Template": {
+    "prefix": "test",
+    "body": [
+      "<?php",
+      "",
+      "use Tools\\Test\\Test;",
+      "use Tools\\Test\\Assert;",
+      "",
+      "\\$test = new Test(\"$0\");",
+      "",
+      "\\$test->test(\"Description\", function () {",
+      "\tAssert::true(true);",
+      "});",
+      "",
+      "\\$test->run();",
+      ""
+    ],
+    "description": "Setup template for a new test case"
+  }
+}

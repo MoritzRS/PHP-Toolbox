@@ -1,6 +1,7 @@
 # PHP Development Base
 
 Basic setups and tools to quickly get php backend projects running.
+All provided tools ship fully tested to ensure stability.
 
 ## Target
 
@@ -14,12 +15,10 @@ Basic setups and tools to quickly get php backend projects running.
 - [x] Autoloader
 - [x] Global Config
 - [x] Setup
-- [ ] Testing Utils
-- [ ] Database Handler
-- [ ] File Upload Handler
-- [ ] Procedures + Runtime
-- [ ] JWT Generator
-- [ ] Timestamp Generator
-- [ ] ID Generator
-- [ ] Template Validator
-- [ ] VS-Code support
+- [x] Testing Utils
+- [x] Database Handler
+- [x] Procedures + Runtime
+- [x] JWT Generator
+- [x] ID Generator
+- [x] Template Validator
+- [x] VS-Code support
