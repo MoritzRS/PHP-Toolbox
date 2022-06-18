@@ -2,7 +2,7 @@
 
 namespace Tools\Procedure;
 
-use Tools\HTTP\HTTPCodes;
+use Tools\HTTP\HttpCodes;
 
 class Runtime {
     /**
@@ -31,7 +31,7 @@ class Runtime {
      */
     public function evaluate(string $procedure, $payload = null, $options = null) {
         if (!isset($this->procedures[$procedure])) {
-            http_response_code(HTTPCodes::NotFound);
+            http_response_code(HttpCodes::NotFound);
             return false;
         }
 

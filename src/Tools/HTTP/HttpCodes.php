@@ -2,7 +2,7 @@
 
 namespace Tools\HTTP;
 
-class HTTPCodes {
+class HttpCodes {
     const Success = 200;
     const BadRequest = 400;
     const Unauthorized = 401;

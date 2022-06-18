@@ -2,7 +2,7 @@
 
 namespace Tools\Procedure;
 
-use Tools\HTTP\HTTPCodes;
+use Tools\HTTP\HttpCodes;
 use Tools\Template\Template;
 
 class Procedure {
@@ -33,7 +33,7 @@ class Procedure {
      */
     public function execute($payload, $options = []) {
         if (!$this->template()->validate($payload)) {
-            http_response_code(HTTPCodes::BadRequest);
+            http_response_code(HttpCodes::BadRequest);
             return false;
         }
         return $this->process($payload);
