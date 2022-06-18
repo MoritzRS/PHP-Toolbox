@@ -5,3 +5,6 @@
 
 require("./config.php");
 require("./autoloader.php");
+
+// program starts on src/index.php
+require("./src/index.php");

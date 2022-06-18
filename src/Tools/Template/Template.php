@@ -19,6 +19,17 @@ class Template {
     }
 
     /**
+     * Creates template from provided json file
+     * @param string $file Path to JSON File
+     * @return Template
+     */
+    public static function fromJSON(string $file) {
+        $json = file_get_contents($file);
+        $parsed = json_decode($json) ?? "";
+        return new self($parsed);
+    }
+
+    /**
      * Validates primitve types
      * @param string $template Template
      * @param mixed $target Target

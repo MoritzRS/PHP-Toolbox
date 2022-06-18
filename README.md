@@ -1,4 +1,4 @@
-# PHP Development Base
+# PHP Toolbox
 
 Basic setups and tools to quickly get php backend projects running.
 All provided tools ship fully tested to ensure stability.
@@ -10,7 +10,7 @@ All provided tools ship fully tested to ensure stability.
 - PHP7
 - SQLite3
 
-## Content
+## Tools
 
 - [x] Autoloader
 - [x] Global Config
@@ -22,3 +22,8 @@ All provided tools ship fully tested to ensure stability.
 - [x] ID Generator
 - [x] Template Validator
 - [x] VS-Code support
+
+## Modules
+
+- [x] Auth Module (User and Session)
+- [x] File Module (Upload and Manage Files)

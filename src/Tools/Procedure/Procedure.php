@@ -6,14 +6,14 @@ use Tools\HTTP\HTTPCodes;
 use Tools\Template\Template;
 
 class Procedure {
-    /**
-     * Payload Template for validation
-     * @var Template
-     */
-    protected $template;
 
-    public function __construct() {
-        $this->template = new Template("mixed");
+    /**
+     * Generates the template.
+     * Used for dynamic generation on usage and inheritance
+     * @return Template
+     */
+    protected function template() {
+        return new Template("mixed");
     }
 
     /**
@@ -32,7 +32,7 @@ class Procedure {
      * @return mixed
      */
     public function execute($payload, $options = []) {
-        if (!$this->template->validate($payload)) {
+        if (!$this->template()->validate($payload)) {
             http_response_code(HTTPCodes::BadRequest);
             return false;
         }

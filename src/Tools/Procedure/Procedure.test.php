@@ -10,8 +10,8 @@ $test = new Test(Procedure::class);
 $test->test("Create and Execute", function () {
     $procedure = new class extends Procedure {
 
-        public function __construct() {
-            $this->template = new Template(["mixed"]);
+        protected function template() {
+            return new Template(["mixed"]);
         }
 
         protected function process($payload) {

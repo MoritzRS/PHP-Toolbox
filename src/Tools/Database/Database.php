@@ -51,6 +51,13 @@ class Database {
     }
 
     /**
+     * Clears the exception
+     */
+    public function clearException() {
+        unset($this->exception);
+    }
+
+    /**
      * Closes the database connection
      */
     public function close() {

@@ -68,4 +68,10 @@ $test->test("Arrays", function () {
     Assert::false($array_validator->validate(["Hello World", 123]));
 });
 
+$test->test("Create fromJSON", function () {
+    $template = Template::fromJSON(__DIR__ . "/template.test.json");
+    Assert::true($template->validate((object)["msg" => "Hello World"]));
+    Assert::false($template->validate("Hello World"));
+});
+
 $test->run();
