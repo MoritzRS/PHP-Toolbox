@@ -1,7 +1,7 @@
 # PHP Toolbox
 
-Basic setups and tools to quickly get php backend projects running.
-All provided tools ship fully tested to ensure stability.
+Basic setup to get PHP projects up and running without any framework.
+Includes tests to ensure stability.
 
 ## Target
 
@@ -10,20 +10,14 @@ All provided tools ship fully tested to ensure stability.
 - PHP7
 - SQLite3
 
-## Tools
+## Features
 
 - [x] Autoloader
 - [x] Global Config
-- [x] Setup
+- [x] Setup Scripting
 - [x] Testing Utils
-- [x] Database Handler
-- [x] Procedures + Runtime
-- [x] JWT Generator
-- [x] ID Generator
-- [x] Template Validator
-- [x] VS-Code support
-
-## Modules
-
-- [x] Auth Module (User and Session)
-- [x] File Module (Upload and Manage Files)
+- [x] Database Utils
+- [x] Router
+- [x] JWT Util
+- [x] Templates (Validator, Normalizer)
+- [x] File Upload Handling

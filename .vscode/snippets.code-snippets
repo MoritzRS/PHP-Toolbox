@@ -4,8 +4,8 @@
     "body": [
       "<?php",
       "",
-      "use Tools\\Test\\Test;",
-      "use Tools\\Test\\Assert;",
+      "use Testing\\Test;",
+      "use Testing\\Assert;",
       "",
       "\\$test = new Test(\"$0\");",
       "",
